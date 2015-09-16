@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/clock.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body background="img/stardust.png">
 	<div class="small-2 columns">.</div>
 	<div class="small-8 columns panel" style="background-image: url('img/geometry2.png')">
+		<div class="row" style="height:10vh">
+			<div class="small-8 columns">.</div>
+			<div class="small-4 columns">
+				<div class="clock">
+					  <ul>
+						  <li id="hours"></li>
+						  <li id="point">:</li>
+						  <li id="min"></li>
+						  <li id="point">:</li>
+						  <li id="sec"></li>
+					  </ul>
+				</div>
+			</div>
+		</div>
 		<div class="text-center">
 			<span data-tooltip aria-haspopup="true" class="has-tip" title="Go to main page">
 				<a href="../rotteSide.html"><img src="http://pre09.deviantart.net/2d60/th/pre/i/2014/111/3/0/deadpool_icon_1_by_jmk_prime-d7fdtw4.png" style="width: 50px; height:50px"></a>
@@ -71,5 +86,40 @@
     <script>
       $(document).foundation();
     </script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		// Create two variable with the names of the months and days in an array
+		var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+		var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+		// Create a newDate() object
+		var newDate = new Date();
+		// Extract the current date from Date object
+		newDate.setDate(newDate.getDate());
+		// Output the day, date, month and year   
+		$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+		setInterval( function() {
+			// Create a newDate() object and extract the seconds of the current time on the visitor's
+			var seconds = new Date().getSeconds();
+			// Add a leading zero to seconds value
+			$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+			},1000);
+			
+		setInterval( function() {
+			// Create a newDate() object and extract the minutes of the current time on the visitor's
+			var minutes = new Date().getMinutes();
+			// Add a leading zero to the minutes value
+			$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+			},1000);
+			
+		setInterval( function() {
+			// Create a newDate() object and extract the hours of the current time on the visitor's
+			var hours = new Date().getHours();
+			// Add a leading zero to the hours value
+			$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+			}, 1000);	
+		});
+	</script>
   </body>
 </html>
