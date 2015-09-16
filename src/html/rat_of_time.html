@@ -10,7 +10,7 @@
 		<script src="../../libs/jQuery.js"></script>
 		<script src="../js/time_script.js"></script>
 		<link type="text/css", rel="stylesheet", href="../../libs/Bootstrap_css.css"/>
-		<link rel="shortcut icon" type="image/png" href="../../icons/rat-icon.png">
+		<link rel="shortcut icon" type="image/png" href="../../icons/clock_icon.png">
 	</head>
 	<style>
 		#iconDeadpool{
@@ -22,13 +22,32 @@
         .inline_block{
 	        display: inline-block;
         }
+        .litt_luft{
+			margin-left: 20px;
+        }
+        body{
+			background-color: #A9BCF5;
+        }
+        .dark_dark_yellow{ /*That name XD*/
+			color: #292A0A; 
+        }
+        .mye_luft{
+			margin: 20px 50px 20px 50px;
+        }
 	</style>
 
-	<body background="http://thumbs.dreamstime.com/x/seamless-pattern-clocks-time-21710984.jpg">
+	<body> <!-- background="http://thumbs.dreamstime.com/x/seamless-pattern-clocks-time-21710984.jpg">-->
 		<div class="inline_block"><a href="../../rotteSide.html"><img id="iconDeadpool" src="http://pre09.deviantart.net/2d60/th/pre/i/2014/111/3/0/deadpool_icon_1_by_jmk_prime-d7fdtw4.png"></img></a></div>
 		<div class="inline_block"><h3 id="time"></h3> </div>
-		<h1>Welcome to the <strong>Time Cluster</strong></h1>
+		<h1>Welcome to the <strong class="dark_dark_yellow">Time Cluster</strong></h1>
 		
+		<div class="litt_luft">
+			<form>
+			Enter your name for a free title: <input type="text" name="Name" placeholder="Nameless"> <button id="knight_me" class="btn-info btn">Knight me</button>
+			</form>
+		</div>
+		<div id="free_title_div">
+		</div>
 	</body>
 
 </html>
