@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  var titles = ["Hero", "Genius", "Legend", "Idiot", "Shit", "Ape", "Mastermind", "Knight", "King", "Winner", "Clown", "Teacher", "Human", "God", "Messia", "Prophet", "Prisoner", "Survivor", "Predator", "Loser", "Disciple", "Warden", "Trailblazer", "Phanton", "High Commander", "Lord", "Wiener", "Failure"];
-  var cause = ["of Justice", "of Evil", "of Pranks", "of Stupidity", "of Power", "of Death", "of Earth", "of the Milkyway", "from Mars", "of Good", "of Memes", "of Joy", "of Sorrow", "from Jupiter", "from Venus", "from the Andromeda galaxy", "among Losers", "from nowhere"]; //will not add the rats causes, may add the rats name as unique exeptions and thereby given their correct titles
-  var adjectives = ["Super", "Unrivaled", "Great", "Horrible", "Epic", "Legendary"];
+  var titles = ["Hero", "Genius", "Legend", "Idiot", "Shit", "Ape", "Mastermind", "Knight", "King", "Winner", "Clown", "Teacher", "Human", "God", "Messia", "Prophet", "Prisoner", "Survivor", "Predator", "Loser", "Disciple", "Warden", "Trailblazer", "Phantom", "High Commander", "Lord", "Wiener", "Failure", "Millionaire", "Refugee", "Billionaire", "Ninja", "Reaper", "Pirate", "Devil"];
+  var cause = ["of Justice", "of Evil", "of Pranks", "of Stupidity", "of Power", "of Death", "of Earth", "of the Milkyway", "from Mars", "of Good", "of Memes", "of Joy", "of Sorrow", "from Jupiter", "from Venus", "from the Andromeda galaxy", "among Losers", "from nowhere", "of Immortality"];
+  var adjectives = ["Super", "Unrivaled", "Great", "Horrible", "Epic", "Legendary", "Broken"];
   var timer = setInterval(function() {
     myTimer()
   }, 100);
@@ -12,7 +12,7 @@ $(document).ready(function() {
   $("#knight_me", "body").click(function() {
     navn = $("input[name=Name]").val();
     if (navn === "") {
-      navn = "Retard who doesn't even have a name"
+      navn = "Anon"
     }
     if (navn === "BrokkoliMan") {
       $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>BrokkoliMan the Rat of Time.</h2>"));
@@ -27,11 +27,11 @@ $(document).ready(function() {
       return false;
     }
     if (navn === "Lax1n") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>Lax1n the Rat of Legends.</h2>")); //Lax1n you may change this
+      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>Lax1n the Rat of Legends.</h2>")); //Lax1n you may change this if you want
       return false;
     }
     if (navn === "AlumiC") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>AlumiC the Rat of Rats.</h2>"));
+      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>AlumiC the Rat of Eternity.</h2>")); //Alumics title is a wip progress
       return false;
     }
     var title = navn + " the "; // + " the " + titles[Math.floor(Math.random() * titles.length)];
