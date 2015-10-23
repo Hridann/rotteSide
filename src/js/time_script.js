@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  var titles = ["Hero", "Genius", "Legend", "Idiot", "Shit", "Ape", "Mastermind", "Knight", "King", "Winner", "Clown", "Teacher", "Human", "God", "Messia", "Prophet", "Prisoner", "Survivor", "Predator", "Loser", "Disciple", "Warden", "Trailblazer", "Phantom", "High Commander", "Lord", "Wiener", "Failure", "Millionaire", "Refugee", "Billionaire", "Ninja", "Reaper", "Pirate", "Devil"];
-  var cause = ["of Justice", "of Evil", "of Pranks", "of Stupidity", "of Power", "of Death", "of Earth", "of the Milkyway", "from Mars", "of Good", "of Memes", "of Joy", "of Sorrow", "from Jupiter", "from Venus", "from the Andromeda galaxy", "among Losers", "from nowhere", "of Immortality"];
-  var adjectives = ["Super", "Unrivaled", "Great", "Horrible", "Epic", "Legendary", "Broken"];
+  var titles = ["Hero", "Genius", "Legend", "Idiot", "Shit", "Ape", "Mastermind", "Knight", "King", "Winner", "Clown", "Teacher", "Human", "God", "Messia", "Prophet", "Prisoner", "Survivor", "Predator", "Loser", "Disciple", "Warden", "Trailblazer", "Phantom", "High Commander", "Lord", "Wiener", "Failure", "Millionaire", "Refugee", "Billionaire", "Ninja", "Reaper", "Pirate", "Devil", "Monarch", "Ruler"];
+  var cause = ["of Justice", "of Evil", "of Pranks", "of Stupidity", "of Power", "of Death", "of Earth", "of the Milkyway", "from Mars", "of Good", "of Memes", "of Joy", "of Sorrow", "from Jupiter", "from Venus", "from the Andromeda galaxy", "among Losers", "from nowhere", "of Immortality", "King"];
+  var adjectives = ["Super", "Unrivaled", "Great", "Horrible", "Epic", "Legendary", "Broken", "Ultimate"];
   var timer = setInterval(function() {
     myTimer()
   }, 100);
