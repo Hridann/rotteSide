@@ -15,23 +15,23 @@ $(document).ready(function() {
       navn = "Anon"
     }
     if (navn === "BrokkoliMan") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>BrokkoliMan the Rat of Time.</h2>"));
+      $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>BrokkoliMan the Rat of Time.</h2>"));
       return false;
     }
     if (navn === "Hridann") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>Hridann the Rat of Resolve.</h2>"));
+      $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>Hridann the Rat of Resolve.</h2>"));
       return false;
     }
     if (navn === "Combojin") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>Combojin the Rat of Luck.</h2>"));
+      $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>Combojin the Rat of Luck.</h2>"));
       return false;
     }
     if (navn === "Lax1n") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>Lax1n the Rat of Legends.</h2>")); //Lax1n you may change this if you want
+      $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>Lax1n the Rat of Legends.</h2>")); //Lax1n you may change this if you want
       return false;
     }
     if (navn === "AlumiC") {
-      $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>AlumiC the Rat of Eternity.</h2>")); //Alumics title is a wip progress
+      $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>AlumiC the Rat of Eternity.</h2>")); //Alumics title is a wip progress
       return false;
     }
     var title = navn + " the "; // + " the " + titles[Math.floor(Math.random() * titles.length)];
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     } //
 
-    $("#free_title_div", "body").append($("<h2 class='bg-success mye_luft'>" + title + ".</h2>"));
+    $("#free_title_div", "body").prepend($("<h2 class='bg-success mye_luft'>" + title + ".</h2>"));
     return false;
   });
 });
